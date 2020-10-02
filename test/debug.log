@@ -1,0 +1,245 @@
+# Logfile created on 2020-10-01 00:51:49 -0300 by logger.rb/v1.4.2
+POST https://sandbox.boletobancario.com:443/authorization-server/transfers/transfers.json
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443/authorization-server/transfers.json
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers.json
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers.json
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 447 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 447 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 447 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 447 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 447 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.4ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.4ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.4ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.4ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443/authorization-server/tokens
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/authorization-server/tokens
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443oauthtokens
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443oauth/tokens
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443oauth/token
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443oauth/token
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443oauth/token
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443oauth/token
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443oauth/token
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443oauth/token
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443oauth/token
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443oauth/token
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/api-integration/balances
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/api-integration/balances
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/balances
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/balances
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balances/current
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balances/current
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balance
+--> 523 ActiveResource connection error 0 (0.2ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balance
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balance
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balance
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balance
+--> 523 ActiveResource connection error 0 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balance
+--> 200 200 98 (0.0ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balance
+--> 200 200 95 (0.0ms)
+POST https://sandbox.boletobancario.com:443/oauth/token
+--> 200 200 165 (0.1ms)
+GET https://sandbox.boletobancario.com:443/api-integration/balance
+--> 200 200 95 (0.0ms)
+POST https://sandbox.boletobancario.com:443/api-integration/transfers
+--> 201 201 432 (0.0ms)
