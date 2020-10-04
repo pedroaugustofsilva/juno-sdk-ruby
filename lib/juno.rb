@@ -18,4 +18,3 @@ end
 
 require 'juno/authorization'
 require 'juno/resources'
-

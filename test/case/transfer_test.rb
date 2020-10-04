@@ -3,6 +3,14 @@
 require 'test_helper'
 
 class TransferTest < ActiveSupport::TestCase
+  def setup
+    setup_responses
+  end
+
+  def teardown
+    ActiveResource::HttpMock.reset!
+  end
+
   def test_request
     attributes = {
       "type": 'BANK_ACCOUNT',

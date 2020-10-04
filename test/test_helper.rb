@@ -28,77 +28,66 @@ Juno.configure do |config|
   config.private_token = 'pr1v4t3'
 end
 
-ActiveResource::HttpMock.respond_to do |mock|
-  mock.post(
+def authorization_successed_body
+  {
+    "access_token": 'eyJhbGciOiJ',
+    "token_type": 'bearer',
+    "expires_in": 86_399,
+    "scope": 'all',
+    "user_name": 'user@domain.com',
+    "jti": '973a0f5b-570f-4993-bebf-b56fdd22804d'
+  }
+end
+
+def transfers_successed_body
+  {
+    "id": 'string',
+    "digitalAccountId": 'string',
+    "creationDate": 'yyyy-MM-dd HH:mm:ss',
+    "transferDate": 'yyyy-MM-dd HH:mm:ss',
+    "amount": 0,
+    "status": 'string',
+    "recipient": { "name": 'string', "document": 'string', "bankAccount": { "bankNumber": 'string', "agencyNumber": 'string', "accountNumber": 'string', "accountComplementNumber": '001', "accountType": 'CHECKING', "accountHolder": { "name": 'string', "document": 'string' } } },
+    "_links": [{ "self": { "href": 'string' } }]
+  }
+end
+
+def resource_headers
+  {
+
+    'Authorization' => 'Bearer eyJhbGciOiJ',
+    'X-Resource-Token' => 'pr1v4t3',
+    'X-Api-Version' => '2'
+  }
+end
+
+def mock_authorization(mocker)
+  mocker.post(
     '/authorization-server/oauth/token',
     {
       'Content-Type' => 'application/x-www-form-urlencoded',
       'Authorization' => 'Basic Y2wxM250XzFkOnMzY3IzdA=='
     },
-    {
-      "access_token": 'eyJhbGciOiJ',
-      "token_type": 'bearer',
-      "expires_in": 86_399,
-      "scope": 'all',
-      "user_name": 'user@domain.com',
-      "jti": '973a0f5b-570f-4993-bebf-b56fdd22804d'
-    }.to_json,
+    authorization_successed_body.to_json,
     '200',
-    {
-
-    }
+    {}
   )
+end
 
-  mock.post(
+def mock_transfers(mocker)
+  mocker.post(
     '/api-integration/transfers',
-    {
-      'Content-Type' => 'application/json',
-      'Authorization' => 'Bearer eyJhbGciOiJ',
-      'X-Resource-Token' => 'pr1v4t3',
-      'X-Api-Version' => '2'
-    },
-    {
-      "id": 'string',
-      "digitalAccountId": 'string',
-      "creationDate": 'yyyy-MM-dd HH:mm:ss',
-      "transferDate": 'yyyy-MM-dd HH:mm:ss',
-      "amount": 0,
-      "status": 'string',
-      "recipient": {
-        "name": 'string',
-        "document": 'string',
-        "bankAccount": {
-          "bankNumber": 'string',
-          "agencyNumber": 'string',
-          "accountNumber": 'string',
-          "accountComplementNumber": '001',
-          "accountType": 'CHECKING',
-          "accountHolder": {
-            "name": 'string',
-            "document": 'string'
-          }
-        }
-      },
-      "_links": [
-        {
-          "self": {
-            "href": 'string'
-          }
-        }
-      ]
-    }.to_json,
+    resource_headers.merge('Content-Type' => 'application/json'),
+    transfers_successed_body.to_json,
     '201',
     {}
   )
+end
 
-  mock.get(
+def mock_balance(mocker)
+  mocker.get(
     '/api-integration/balance',
-    {
-      'Accept' => 'application/json',
-      'Authorization' => 'Bearer eyJhbGciOiJ',
-      'X-Resource-Token' => 'pr1v4t3',
-      'X-Api-Version' => '2'
-    },
+    resource_headers.merge('Accept' => 'application/json'),
     {
       "balance": 0,
       "withheldBalance": 0,
@@ -112,7 +101,14 @@ ActiveResource::HttpMock.respond_to do |mock|
       ]
     }.to_json,
     '200',
-    {
-    }
+    {}
   )
+end
+
+def setup_responses
+  ActiveResource::HttpMock.respond_to do |mock|
+    mock_authorization(mock)
+    mock_transfers(mock)
+    mock_balance(mock)
+  end
 end

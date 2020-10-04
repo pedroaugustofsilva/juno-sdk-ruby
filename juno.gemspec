@@ -16,6 +16,8 @@ Gem::Specification.new do |spec|
   spec.description = 'Juno SDK'
   spec.license     = 'MIT'
 
+  spec.required_ruby_version = '>= 2.4.0'
+
   spec.add_dependency 'activeresource'
   spec.add_dependency 'faraday'
   spec.add_development_dependency 'rake'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Juno
   class SingularResource < Juno::Resource
     def self.element_path(_id, prefix_options = {}, query_options = nil)
