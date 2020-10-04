@@ -2,18 +2,20 @@
 
 module Juno
   class Authorization < ActiveResource::Base
+    class AuthorizationError < StandardError; end
+
     self.site = Juno.configuration.endpoint_for(:authorization)
-    self.prefix = '/oauth/'
-    self.collection_name = 'token'
+    self.collection_name = 'oauth/token'
 
     def self.current
       @current ||= begin
         response = connection.post("#{prefix}#{collection_name}", 'grant_type=client_credentials', headers)
 
-        if response.success?
-          new(response.body)
+        case response.code.to_i
+        when 200
+          new(JSON.parse(response.body))
         else
-          raise ArgumentError
+          raise AuthorizationError, response.inspect
         end
       end
     end

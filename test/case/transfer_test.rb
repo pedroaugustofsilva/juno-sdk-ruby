@@ -24,7 +24,7 @@ class TransferTest < ActiveSupport::TestCase
       :post,
       '/api-integration/transfers',
       attributes.to_json,
-      { 'Content-Type' => 'application/json', 'Authorization' => 'eyJhbGciOiJ', 'X-Resource-Token' => 'pr1v4t3', 'X-Api-Version' => '2' }
+      { 'Content-Type' => 'application/json', 'Authorization' => 'Bearer eyJhbGciOiJ', 'X-Resource-Token' => 'pr1v4t3', 'X-Api-Version' => '2' }
     )
 
     assert_includes ActiveResource::HttpMock.requests, expected_request

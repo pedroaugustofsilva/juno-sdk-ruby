@@ -10,7 +10,7 @@ class BalaceTest < ActiveSupport::TestCase
       :get,
       '/api-integration/balance',
       nil,
-      { 'Accept' => 'application/json', 'Authorization' => 'eyJhbGciOiJ', 'X-Resource-Token' => 'pr1v4t3', 'X-Api-Version' => '2' }
+      { 'Accept' => 'application/json', 'Authorization' => 'Bearer eyJhbGciOiJ', 'X-Resource-Token' => 'pr1v4t3', 'X-Api-Version' => '2' }
     )
 
     assert_includes ActiveResource::HttpMock.requests, expected_request

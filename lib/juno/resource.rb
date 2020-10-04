@@ -20,7 +20,7 @@ module Juno
       private
 
       def authorization_header
-        { 'Authorization' => current_authorization.access_token }
+        { 'Authorization' => "Bearer #{current_authorization.access_token}" }
       end
 
       def resource_token_header

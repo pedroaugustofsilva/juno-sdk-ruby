@@ -30,7 +30,7 @@ end
 
 ActiveResource::HttpMock.respond_to do |mock|
   mock.post(
-    '/oauth/token',
+    '/authorization-server/oauth/token',
     {
       'Content-Type' => 'application/x-www-form-urlencoded',
       'Authorization' => 'Basic Y2wxM250XzFkOnMzY3IzdA=='
@@ -42,8 +42,8 @@ ActiveResource::HttpMock.respond_to do |mock|
       "scope": 'all',
       "user_name": 'user@domain.com',
       "jti": '973a0f5b-570f-4993-bebf-b56fdd22804d'
-    },
-    200,
+    }.to_json,
+    '200',
     {
 
     }
@@ -53,7 +53,7 @@ ActiveResource::HttpMock.respond_to do |mock|
     '/api-integration/transfers',
     {
       'Content-Type' => 'application/json',
-      'Authorization' => 'eyJhbGciOiJ',
+      'Authorization' => 'Bearer eyJhbGciOiJ',
       'X-Resource-Token' => 'pr1v4t3',
       'X-Api-Version' => '2'
     },
@@ -87,7 +87,7 @@ ActiveResource::HttpMock.respond_to do |mock|
         }
       ]
     }.to_json,
-    201,
+    '201',
     {}
   )
 
@@ -95,7 +95,7 @@ ActiveResource::HttpMock.respond_to do |mock|
     '/api-integration/balance',
     {
       'Accept' => 'application/json',
-      'Authorization' => 'eyJhbGciOiJ',
+      'Authorization' => 'Bearer eyJhbGciOiJ',
       'X-Resource-Token' => 'pr1v4t3',
       'X-Api-Version' => '2'
     },
@@ -111,7 +111,7 @@ ActiveResource::HttpMock.respond_to do |mock|
         }
       ]
     }.to_json,
-    200,
+    '200',
     {
     }
   )
