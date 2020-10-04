@@ -24,4 +24,3 @@ class BalaceTest < ActiveSupport::TestCase
     assert_includes ActiveResource::HttpMock.requests, expected_request
   end
 end
-

@@ -26,6 +26,7 @@ Juno.configure do |config|
   config.client_id = 'cl13nt_1d'
   config.client_secret = 's3cr3t'
   config.private_token = 'pr1v4t3'
+  config.environment = :sandbox
 end
 
 def authorization_successed_body
