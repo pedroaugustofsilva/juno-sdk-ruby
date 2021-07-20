@@ -1,30 +1,55 @@
 # frozen_string_literal: true
 
-module Juno
-  class Resource < ActiveResource::Base
-    self.site = Juno.configuration.endpoint_for(:resource)
+require 'http'
 
+module Juno
+  class Resource
     class << self
-      def headers
-        self._headers = superclass.headers
-                                  .merge(_headers || {})
-                                  .merge(authorization_header)
-                                  .merge(resource_token_header)
-                                  .merge('X-Api-Version' => '2')
+      def post(path, body)
+        req(:post, path, body)
       end
 
-      def current_authorization
-        @current_authorization ||= Juno::Authorization.current
+      def patch(path, body)
+        req(:patch, path, body)
+      end
+
+      def get(path)
+        req(:get, path)
+      end
+
+      def delete(path)
+        req(:delete, path)
+      end
+
+      def put(path, body = {})
+        req(:put, path, body)
       end
 
       private
 
-      def authorization_header
-        { 'Authorization' => "Bearer #{current_authorization.access_token}" }
+      def req(method, path, body = {}, fallback = true)
+        res = HTTP.headers(headers).send(method, "#{endpoint}#{path}", json: body)
+
+        if res.code.eql?(401) && fallback
+          Juno::Authorization.refresh_token
+          req(method, path, body, false)
+        else
+          body = res.code.eql?(204) ? '' : JSON.parse(res.body.to_s)
+          { body: body, code: res.code }
+        end
       end
 
-      def resource_token_header
-        { 'X-Resource-Token' => Juno.configuration.private_token }
+      def endpoint
+        Juno.configuration.endpoint_for(:resource)
+      end
+
+      def headers
+        {
+          'Content-Type': 'application/json;charset=UTF-8',
+          'X-Resource-Token': Juno.configuration.private_token,
+          'Authorization': "Bearer #{Juno::Authorization.token}",
+          'X-Api-Version': 2
+        }
       end
     end
   end

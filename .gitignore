@@ -1,1 +1,5 @@
 test/debug.log
+
+.byebug_history
+
+*.gem

@@ -12,13 +12,14 @@ Gem::Specification.new do |spec|
   spec.authors     = ['']
   spec.email       = ['']
   spec.homepage    = ''
+  spec.files       = Dir['lib/**/**.rb']
   spec.summary     = 'Juno SDK'
   spec.description = 'Juno SDK'
   spec.license     = 'MIT'
 
   spec.required_ruby_version = '>= 2.4.0'
 
-  spec.add_dependency 'activeresource'
-  spec.add_dependency 'faraday'
+  spec.add_runtime_dependency 'faraday'
+  spec.add_runtime_dependency 'http'
   spec.add_development_dependency 'rake'
 end
