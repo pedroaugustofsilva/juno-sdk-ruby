@@ -1,5 +1,5 @@
 test/debug.log
 node_modules
 .byebug_history
-
+.idea
 *.gem

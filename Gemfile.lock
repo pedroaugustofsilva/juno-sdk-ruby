@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    juno (0.1.0)
+    juno-sdk (0.2.0)
       faraday
       http
 
@@ -42,7 +42,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  juno!
+  juno-sdk!
   rake
 
 BUNDLED WITH

@@ -7,10 +7,10 @@ require 'juno/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = 'juno'
+  spec.name        = 'juno-sdk'
   spec.version     = Juno::VERSION
-  spec.authors     = ['']
-  spec.email       = ['']
+  spec.authors     = ['Nullbug']
+  spec.email       = ['pedro@nullbug.dev']
   spec.homepage    = ''
   spec.files       = Dir['lib/**/**.rb']
   spec.summary     = 'Juno SDK'
