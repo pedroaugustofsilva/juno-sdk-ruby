@@ -3,7 +3,7 @@
 module Juno
   autoload :Authorization, 'juno/authorization.rb'
   autoload :Configuration, 'juno/configuration.rb'
-  autoload :Transaction, 'juno/charges.rb'
+  autoload :Charges, 'juno/transaction/charges.rb'
   autoload :Webhooks, 'juno/webhooks.rb'
   autoload :Resource, 'juno/resource.rb'
 
