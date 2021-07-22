@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-#
+
 module Juno
   class Configuration
     POSSIBLES_ENVIRONMENTS = %i[sandbox production].freeze
