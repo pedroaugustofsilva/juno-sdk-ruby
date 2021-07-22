@@ -24,6 +24,12 @@ module Juno
       def event_types
         get('/notifications/event-types')
       end
+
+      def valid_signature?(signature, secret, payload)
+        our_signature = OpenSSL::HMAC.hexdigest('SHA256', secret, payload)
+
+        our_signature.eql?(signature)
+      end
     end
   end
 end
